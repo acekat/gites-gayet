@@ -1,9 +1,21 @@
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-{% capture page_title %}{{ title | strip_html | strip_newlines }}{% endcapture %}
-<title>{% if page_title != "" %}{{ page_title | escape }} | {{ metadata.title | escape }}{% else %}{{ metadata.title | escape }}: {{ metadata.tagline | escape }}{% endif %}</title>
+<title>{{ metadata.title | escape}}</title>
+<meta name="description" content="{{ metadata.description }}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta name="description" content="{{ metadata.description }}" />
+<!-- TODO -->
+<meta property="og:title" content="">
+<meta property="og:type" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+
+<!-- TODO -->
+<link rel="manifest" href="site.webmanifest">
+<link rel="apple-touch-icon" href="icon.png">
+<!-- Place favicon.ico in the root directory -->
 
 <link rel="stylesheet" href="{% webpack_path css %}" />
 <script src="{% webpack_path js %}" defer></script>
+
+<!-- TODO -->
+<meta name="theme-color" content="#fafafa">

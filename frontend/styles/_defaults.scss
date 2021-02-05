@@ -1,0 +1,11 @@
+html {
+  box-sizing: border-box; // natural box layout model to all elements
+  font-size: 62.5%; // for easy rem sizing: 1rem = 10px
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}

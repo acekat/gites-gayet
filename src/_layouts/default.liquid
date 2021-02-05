@@ -1,15 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
-    {% render "head", metadata: site.metadata, title: page.title %}
+    {% render "head", metadata: site.metadata %}
   </head>
-  <body class="{{ page.layout }} {{ page.page_class }}">
-    {% render "navbar", metadata: site.metadata, page: page %}
+  <body>
+    {% render "navbar/navbar", metadata: site.metadata, page: page %}
 
     <main>
       {{ content }}
     </main>
 
-    {% render "footer", metadata: site.metadata %}
   </body>
 </html>
