@@ -19,13 +19,13 @@ module.exports = {
   resolve: {
     extensions: [".js", ".jsx"],
     modules: [
-      path.resolve(__dirname, 'frontend', 'javascript'),
-      path.resolve(__dirname, 'frontend', 'styles'),
-      path.resolve('./node_modules')
+      path.resolve(__dirname, "frontend", "javascript"),
+      path.resolve(__dirname, "frontend", "styles"),
+      path.resolve("./node_modules"),
     ],
     alias: {
-      bridgetownComponents: path.resolve(__dirname, "src", "_components")
-    }
+      bridgetownComponents: path.resolve(__dirname, "src", "_components"),
+    },
   },
   plugins: [
     new MiniCssExtractPlugin({
@@ -44,8 +44,8 @@ module.exports = {
           options: {
             presets: ["@babel/preset-env"],
             plugins: [
-              ["@babel/plugin-proposal-decorators", { "legacy": true }],
-              ["@babel/plugin-proposal-class-properties", { "loose" : true }],
+              ["@babel/plugin-proposal-decorators", { legacy: true }],
+              ["@babel/plugin-proposal-class-properties", { loose: true }],
               [
                 "@babel/plugin-transform-runtime",
                 {
@@ -56,7 +56,7 @@ module.exports = {
           },
         },
       },
-      
+
       {
         test: /\.(s[ac]|c)ss$/,
         use: [
@@ -66,15 +66,13 @@ module.exports = {
             loader: "sass-loader",
             options: {
               sassOptions: {
-                includePaths: [
-                  path.resolve(__dirname, "src/_components")
-                ],
+                includePaths: [path.resolve(__dirname, "src/_components")],
               },
             },
           },
         ],
       },
-      
+
       {
         test: /\.woff2?$|\.ttf$|\.eot$|\.svg$/,
         loader: "file-loader",
