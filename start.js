@@ -18,9 +18,6 @@ concurrently(
     killOthers: ["failure", "success"],
   }
 ).then(
-  () => {
-    console.log("Done.");
-    // console.log("\033[0G");
-  },
+  () => {},
   () => {}
 );
