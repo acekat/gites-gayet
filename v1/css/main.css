@@ -1,0 +1,106 @@
+body {
+  background: transparent url("../img/header.jpg") no-repeat;
+  background-size: contain;
+  background-color: #1f2e19;
+}
+
+.container {
+  margin-top: 30%;
+}
+
+header,
+.lead,
+footer {
+  color: #eee;
+}
+header a,
+.lead a,
+footer a {
+  padding-bottom: 0.1em;
+  color: #eee;
+  text-decoration: none;
+  border-bottom: 1px #eee solid;
+}
+header a:hover,
+.lead a:hover,
+footer a:hover {
+  border-bottom: none;
+}
+
+header {
+  margin-bottom: 30px;
+  color: #eee;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 1px 1px 3px black, 0 0 30px rgba(0, 0, 0, 0.5);
+}
+header h1 {
+  font-size: 120px;
+  font-family: "Euphoria Script", cursive;
+}
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 75px;
+  }
+}
+
+footer {
+  text-align: center;
+}
+
+.gallery {
+  height: 225px;
+}
+
+.gallery img {
+  height: 100%;
+  margin-right: 10px;
+}
+
+.thumbnail {
+  padding: 0;
+}
+
+.panel-heading {
+  color: #eee;
+}
+.panel-heading small {
+  color: #bbb;
+  font-size: 80%;
+}
+
+.panel-presentation {
+  border-color: #526572;
+}
+.panel-presentation .panel-heading {
+  background-color: #5d6c81;
+  border-color: #526572;
+}
+
+.panel-gite1 {
+  border-color: #526572;
+}
+.panel-gite1 .panel-heading {
+  background-color: #5d6c81;
+  border-color: #526572;
+}
+
+.panel-gite2 {
+  border-color: #63643e;
+}
+.panel-gite2 .panel-heading {
+  background-color: #6b7448;
+  border-color: #63643e;
+}
+
+.panel-tarifs {
+  border-color: #b85c61;
+}
+.panel-tarifs .panel-heading {
+  background-color: #c0776e;
+  border-color: #b85c61;
+}
+
+.panel iframe {
+  margin-bottom: 15px;
+}
